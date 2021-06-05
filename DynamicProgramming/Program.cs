@@ -15,13 +15,11 @@ namespace DynamicProgramming
             {
                 Console.WriteLine(
                     Environment.NewLine + "1. MultiStageGraph Problem" + //Time Complexity(n^2)
-                    Environment.NewLine + "2. All Pairs Shortest Path - FloydWarshall" + //Time Complexity(n^3)
-                    Environment.NewLine + "3. Matrix Chain Multiplication" + //Time Complexity(n^3)
-                    Environment.NewLine + "4. Single Source Shortest Path - Bellman Ford" + //Best Case - Time Complexity(n^2), Worst Case - Time Complexity(n^3)
-                    Environment.NewLine + "5. 0/1 Knapsack Problem" + //Time Complexity(2^n)
-                    Environment.NewLine + "6. Optimal Binary Search Tree" + //Time Complexity(n^3)
-                    Environment.NewLine + "7. Traveling Salesman Problem" + //Time Complexity(n^2*2^n)
-                    Environment.NewLine + "8. Longest Common Subsequence Problem" +
+                    Environment.NewLine + "2. Matrix Chain Multiplication" + //Time Complexity(n^3)
+                    Environment.NewLine + "3. 0/1 Knapsack Problem" + //Time Complexity(2^n)
+                    Environment.NewLine + "4. Optimal Binary Search Tree" + //Time Complexity(n^3)
+                    Environment.NewLine + "5. Traveling Salesman Problem" + //Time Complexity(n^2*2^n)
+                    Environment.NewLine + "6. Longest Common Subsequence Problem" +
                     Environment.NewLine + "0. Exit\n"
                 );
 
@@ -43,30 +41,20 @@ namespace DynamicProgramming
                 }
                 else if (i == 2)
                 {
-                    FloydWarshall pairsShortestPath = new FloydWarshall();
-                    pairsShortestPath.ShortestPathPair();
-                }
-                else if (i == 3)
-                {
                     MatrixChainMultiplication matrixChainMultiplication = new MatrixChainMultiplication();
                     matrixChainMultiplication.MatrixMultiplcationSeq();
                 }
-                else if (i == 4)
-                {
-                    BellmanFord bellmanFord = new BellmanFord();
-                    bellmanFord.ShortestPathPair();
-                }
-                else if (i == 5)
+                else if (i == 3)
                 {
                     knapsackProblem knapsackProblem = new knapsackProblem();
                     knapsackProblem.GetMaxProfit();
                 }
-                else if(i == 6)
+                else if(i == 4)
                 {
                     OptimalBinarySearchTree optimalBinarySearchTree = new OptimalBinarySearchTree();
                     optimalBinarySearchTree.optimalSearchTree();
                 }
-                else if(i == 7)
+                else if(i == 5)
                 {
                     Console.Write("\nEnter the starting vertex : ");
                     int idx = Convert.ToInt32(Console.ReadLine());
@@ -74,7 +62,7 @@ namespace DynamicProgramming
                     TravelingSalesmanProblem travelingSalesmanProblem = new TravelingSalesmanProblem();
                     Console.WriteLine($"Minimmun cost : {travelingSalesmanProblem.MinTravelingCost(0, 1 << (idx - 1))}");
                 }
-                else if(i == 8)
+                else if(i == 6)
                 {
                     Console.Write("\nEnter the first string : ");
                     string str1 = Console.ReadLine();

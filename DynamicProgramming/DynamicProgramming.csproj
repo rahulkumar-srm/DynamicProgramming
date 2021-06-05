@@ -43,12 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Helper\BellmanFord.cs" />
     <Compile Include="Helper\knapsackProblem.cs" />
     <Compile Include="Helper\LCSProblem.cs" />
     <Compile Include="Helper\MatrixChainMultiplication.cs" />
     <Compile Include="Helper\MultiStageGraph.cs" />
-    <Compile Include="Helper\FloydWarshall.cs" />
     <Compile Include="Helper\OptimalBinarySearchTree.cs" />
     <Compile Include="Helper\TravelingSalesmanProblem.cs" />
     <Compile Include="Program.cs" />
